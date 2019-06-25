@@ -1,0 +1,152 @@
+/*! xsource Document - xgrid - version 1.0.0 - xsource.com.br © */
+/*
+ * O que se segue é o resultado de muita pesquisa sobre estilo cross-browser.
+ * Este documento foi formulado e desenvolvido por Thiago Carvalho - Front-end Developer.
+ * Email: thiago.xsource@xsource.com.br
+ * © 2007 - 2019 copyright.
+ */
+
+/* ==========================================================================
+    Estilos do cabecalho do projeto
+    ========================================================================== */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* ==========================================================================
+    Estilos da página para o cabecalho
+    ========================================================================== */
+header {
+  min-height: 80vh;
+  max-height: 540px;
+  position: relative;
+  padding: 3.5rem 0 0;
+}
+header .logo {
+  display: block;
+  position: relative;
+}
+header h1 {
+  display: none;
+  visibility: hidden;
+}
+
+/* ==========================================================================
+    Estilos da página inicial do projeto
+    ========================================================================== */
+.wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.info {
+  position: relative;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+.info:before {
+  content: " ";
+  display: block;
+  height: 3px;
+  background-color: #c79144;
+  width: 100px;
+  position: absolute;
+  top: -3px;
+}
+.info p {
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+.box-buttons {
+  margin-top: 2rem;
+  position: relative;
+}
+.btn-access {
+  background-color: #c79144;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1.25rem 2.5rem;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  line-height: 1;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.175);
+  vertical-align: middle;
+}
+.legend {
+  color: #fff;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  border-left: 1px solid #c79144;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+.people {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+.people img {
+  width: auto;
+  height: 95vh;
+  display: block;
+}
+
+@media all and (min-width: 1024px) {
+  .info {
+    max-width: 400px;
+    left: 80px;
+  }
+  .box-buttons {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    padding-left: 80px;
+  }
+  .legend {
+    position: absolute;
+    bottom: 35px;
+    margin-left: -5rem;
+  }
+}
+@media (min-width: 620px) and (max-width: 1024px) {
+  .info {
+    width: 50%;
+  }
+  .legend {
+    position: absolute;
+    bottom: 35px;
+    margin-left: -4.5rem;
+  }
+}
+@media all and (max-width: 620px) {
+  .wrapper {
+    padding: 0 2rem;
+  }
+  .people {
+    display: none;
+  }
+  .legend {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+     Estilos para o rodape
+     ========================================================================== */
+footer {
+  position: relative;
+}

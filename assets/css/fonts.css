@@ -1,0 +1,25 @@
+/*! xsource Document - xgrid - version 1.0.0 - xsource.com.br © */
+/*
+ * O que se segue é o resultado de muita pesquisa sobre estilo cross-browser.
+ * Este documento foi formulado e desenvolvido por Thiago Carvalho - Front-end Developer.
+ * Email: thiago.xsource@xsource.com.br
+ * © 2007 - 2017 copyright.
+ */
+
+/* ==========================================================================
+  Basic style fonts
+============================================================================ */
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,700");
+
+html,
+body,
+input,
+textarea,
+select,
+label {
+  font: normal normal normal 100%/1.5 "Ubuntu", sans-serif;
+  color: #767676;
+} /* declaração única font: style variant weight size/line-height font-family */
+
+/** reset hiperlinks website */
